@@ -176,4 +176,4 @@ smb: smb@4000000 {
 ![Interrupt Mapping Example][2]
 
  [1]: ./images/Example_Of_The_Interrupt_Tree.PNG
- [2]: ./images/Interrupt_Mapping_Example.png
+ [2]: ./images/Interrupt_Mapping_Example.PNG
