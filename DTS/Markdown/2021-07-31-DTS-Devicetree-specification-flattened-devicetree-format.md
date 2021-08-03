@@ -62,11 +62,11 @@ struct fdt_reserve_entry
 
 该结构块描述了 **Devicetree** 自身的结构和内容。它由一系列包含数据的 **tokens** 组成，这些结构被组织成一个线性的树状结构。
 
- - **FDT_BEGIN_NODE (0x00000001)**：该 **token** 标识了一个 **node** 的开始位置。它的后面跟着 **node-name@unit-address**。它后面可能是除 **FDT_END** 之外的任何 **token**。
+ - **FDT_BEGIN_NODE (0x00000001)**：该 **token** 标识了一个 **node** 的开始位置。它的后面跟着 **node-name@unit-address**。下一个 **token** 是除 **FDT_END** 之外的任何 **token**。
 
  - **FDT_END_NODE (0x00000002)**：该 **token** 标识了一个 **node** 的结束位置。它的后面没有额外数据，所以直接跟随下一个 **token**。它后面可能是除 **FDT_PROP** 之外的任何 **token**。
 
- - **FDT_PROP (0x00000003)**：该 **token** 标记了一个 **property** 的开始位置。它的后面跟着描述该 **property** 的数据结构，之后为具体的属性值。它后面可能是除 **FDT_END** 之外的任何 **token**。
+ - **FDT_PROP (0x00000003)**：该 **token** 标记了一个 **property** 的开始位置。它的后面跟着描述该 **property** 的数据结构，之后为具体的属性值。下一个 **token** 可能是除 **FDT_END** 之外的任何 **token**。
 
     ```
     struct
@@ -80,7 +80,7 @@ struct fdt_reserve_entry
 
     - nameoff：表示该 **property** 的字符串名字在 **strings block** 中的偏移。
 
- - **FDT_NOP (0x00000004)**：任何解析 **Devicetree** 的程序都将忽略 **FDT_NOP** 。此 ** token** 没有额外的数据，因此它后面紧跟着下一个有效令牌。任何 **property** 或 **node** 可以被 **FDT_NOP** 覆盖，以将其从 **Devicetree** 中删除（无需移动树中的其它部分）。
+ - **FDT_NOP (0x00000004)**：任何解析 **Devicetree** 的程序都将忽略 **FDT_NOP** 。此 **token** 没有额外的数据，因此它后面紧跟着下一个有效令牌。任何 **property** 或 **node** 可以被 **FDT_NOP** 覆盖，以将其从 **Devicetree** 中删除（无需移动树中的其它部分）。
 
  - **FDT_END (0x00000009)**：该 **token** 标识了一个 **DTB** 的结束位置。
 
