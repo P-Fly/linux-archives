@@ -1,0 +1,13 @@
+/dts-v1/;
+
+/memreserve/ 0x40000000 0x01000000;
+
+/ {
+    foo-node {
+        compatible = "foo";
+
+        bar-node {
+            compatible = "bar";
+        };
+    };
+};
