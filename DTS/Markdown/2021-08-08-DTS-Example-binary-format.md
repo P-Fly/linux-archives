@@ -1,4 +1,4 @@
-# **Device Tree** 的二进制分析
+# **Devicetree** 的二进制分析
 
 ## 安装 **DTC**
 

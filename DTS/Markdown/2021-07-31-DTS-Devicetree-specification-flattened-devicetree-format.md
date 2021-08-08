@@ -1,4 +1,6 @@
-# DTB格式
+# 二进制格式
+
+## 简介
 
 **DTB** 的数据格式如下：
 
@@ -105,3 +107,4 @@ struct fdt_reserve_entry
 这样做的好处是：**由于内部均使用偏移地址，因此能够实现地址重定向。**
 
  [1]: ./images/Devicetree_Structure.PNG
+
