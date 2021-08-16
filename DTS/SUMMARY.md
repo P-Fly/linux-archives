@@ -16,7 +16,8 @@
 ---
 
 - Tips
-    - [Tips](Markdown/2021-08-08-DTS-Tips.md)
+    - [DTC 如何处理同名节点和同名属性](Markdown/2021-08-14-DTS-Tips-merge-the-same-property.md)
+    - [reg 属性和 range 属性的区别](Markdown/2021-08-14-DTS-Tips-reg-and-range-property.md)
 
 ---
 

@@ -94,6 +94,8 @@ struct fdt_reserve_entry
 
  - 该块没有对齐约束。
 
+ - 该块的目的是为了减少 **DTB** 所需要的内存空间。因为在 **Devicetree** 中存在大量的同名属性，比如 **compatible**。
+
 ## Alignment
 
 各块的对齐规则如下：
