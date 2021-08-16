@@ -4,4 +4,4 @@
 
 ---
 
-- [DTS](DTS/SUMMARY.md)
+- [DTS](devicetree/SUMMARY.md)
