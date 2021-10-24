@@ -1,7 +1,5 @@
 # Summary
 
----
-
 - Specification
     - [基本概念](Markdown/2021-07-03-DTS-Specification-The-devicetree.md)
     - [中断和中断映射](Markdown/2021-07-04-DTS-Specification-Interrupts-and-interrupt-mapping.md)
