@@ -1,0 +1,14 @@
+vim
+tree
+dos2unix
+libncurses5-dev
+libssl-dev
+build-essential
+openssl
+qemu
+gcc-arm-linux-gnueabi
+git
+flex
+bison
+python2
+python3
